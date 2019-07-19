@@ -1,0 +1,28 @@
+{
+	"version" : 1,
+	"log4jPath" : "config/local/log4j.xml",
+	"port" : 8888,
+    "threadPool" : 20,
+    "heartMinTime" : 100,
+    "heartMaxTime" : 5000,
+    "enableDBShard" : false,
+    "baseThreadDelay" : 300,
+    "pvpThreadDelay" : 100,
+    "pveThreadDelay" : 200,
+    "leisurePool" : 1,
+    "competitionPool" : 1,
+    "roomPool" : 200,
+    "cardBoardV" : 3,
+    "cardBoardH" : 3,
+    "cardGroupCount" : 5,
+    "dbConfig" : {
+        "gamedb" : {
+            "configXmlFilename" : "sqlconfig-gamedb.xml",
+            "propertiesFilename" : "sqlconfig-gamedb.properties"
+        },
+        "logdb" : {
+            "configXmlFilename" : "sqlconfig-logdb.xml",
+            "propertiesFilename" : "sqlconfig-logdb.properties"
+        }
+    }
+}

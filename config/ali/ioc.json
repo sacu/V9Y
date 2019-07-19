@@ -1,0 +1,5 @@
+{
+	{"name":"com.game.sa.factory.LoginFactory","type":0,"group":{"com.game.sa.logic.login.LoginLogicWorker"}}
+	{"name":"com.game.sa.factory.UserFactory","type":0,"group":{"com.game.sa.logic.login.BaseInfoLogicWorker","com.game.sa.logic.login.HeroInfoLogicWorker"}}
+	{"name":"com.game.sa.data.netty.tcp.SocketDataWorker","type":1,"group":{"com.game.sa.factory.LoginFactory","com.game.sa.factory.UserFactory"}}
+}

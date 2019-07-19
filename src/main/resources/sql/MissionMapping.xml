@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+    "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sa.mybatis.mission">
+	<resultMap id="MissionModel" type="com.game.sa.data.mybatis.bean.MissionModel">
+		<result property="userID" column="userID" />
+		<result property="missionID" column="missionID" />
+		<result property="missionType" column="missionType" />
+		<result property="conditionCount" column="conditionCount" />
+	</resultMap>
+	<parameterMap id="MissionModel" type="com.game.sa.data.mybatis.bean.MissionModel">
+	</parameterMap>
+	<!-- 获取任务列表 -->
+	<select id="selectMissionModelList" resultMap="MissionModel">
+		select * from sa_dt_mission
+	</select>
+	<!-- 插入任务 -->
+	<insert id="insertMissionModel" keyProperty="userID" parameterMap="MissionModel">
+		insert into sa_dt_mission(userID, missionID, missionType, conditionCount) 
+		value(#{userID}, #{missionID}, #{missionType}, #{conditionCount})
+	</insert>
+	<!-- 更新任务 -->
+	<update id="updateMissionModel" parameterMap="MissionModel">
+		update
+		sa_dt_mission set conditionCount=#{conditionCount} where userID=#{userID} and missionID=#{missionID}
+	</update>
+	
+	<!-- 删除任务 -->
+	<delete id="deleteMissionModel" parameterMap="MissionModel">
+		delete from sa_dt_mission where userID=#{userID} and missionID=#{missionID}
+	</delete>
+</mapper>

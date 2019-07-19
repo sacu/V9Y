@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+    "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sa.mybatis.card">
+	<resultMap id="CardEquipModel" type="com.game.sa.data.mybatis.bean.CardEquipModel">
+		<result property="ID" column="ID" />
+		<result property="userID" column="userID" />
+		<result property="equipID" column="equipID" />
+		<result property="state" column="state" />
+	</resultMap>
+	<parameterMap id="CardEquipModel"
+		type="com.game.sa.data.mybatis.bean.CardEquipModel">
+	</parameterMap>
+	<!-- 获取装备列表 -->
+	<select id="findCardEquipModelList" resultMap="CardEquipModel">
+		select * from sa_dt_card_equip
+	</select>
+	<!-- 插入装备 -->
+	<insert id="insertCardEquipModel" useGeneratedKeys="true" keyProperty="ID" parameterMap="CardEquipModel">
+		insert into
+		sa_dt_card_equip(userID, equipID) 
+		value(#{userID}, #{equipID})
+	</insert>
+	<!-- 更新装备状态 -->
+	<update id="updateCardEquipModelToState" parameterMap="CardEquipModel">
+		update sa_dt_card_equip set state=#{state} where ID=#{ID}
+	</update>
+	
+	<!-- 删除装备 -->
+	<delete id="deleteCardEquipModel" parameterType="int">
+		delete from sa_dt_card where ID=#{ID}
+	</delete>
+</mapper>

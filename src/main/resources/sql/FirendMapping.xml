@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC
+    "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sa.mybatis.firend">
+	<resultMap id="FirendModel" type="com.game.sa.data.mybatis.bean.FirendModel">
+		<result property="userID" column="userID" />
+		<result property="firendCount" column="firendCount" />
+		<result property="firendList" column="firendList" />
+	</resultMap>
+	<parameterMap id="FirendModel"
+		type="com.game.sa.data.mybatis.bean.FirendModel">
+	</parameterMap>
+	<!-- 获取好友列表 -->
+	<select id="findFirendModelList" resultMap="FirendModel">
+		select * from sa_dt_firend
+	</select>
+	<!-- 插入好友列表 -->
+	<insert id="insertFirendModel" parameterMap="FirendModel">
+		insert into
+		sa_dt_firend(userID) value(#{userID})
+	</insert>
+	<!-- 更新好友列表 -->
+	<update id="updateFirendModel" parameterMap="FirendModel">
+		update sa_dt_firend set firendCount=#{firendCount}, firendList=#{firendList} where userID=#{userID}
+	</update>
+</mapper>
