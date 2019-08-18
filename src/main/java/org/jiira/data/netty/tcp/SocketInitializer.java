@@ -22,10 +22,10 @@ public class SocketInitializer extends ChannelInitializer<SocketChannel> {
 
 	public void initChannel(SocketChannel ch) throws Exception {
 		ChannelPipeline pipeline = ch.pipeline();
+		pipeline.addLast(new IdleStateHandler(5000, 5000, 5000,TimeUnit.MILLISECONDS));//顺序必须在第一个不然不触发……还没来及查原理
 		pipeline.addLast(new NettyByteDecoder());// 解码 拆箱
 		pipeline.addLast(new NettyByteEncoder());// 编码 装箱
 		pipeline.addLast(new SocketAdapter(handlerDispatcher));
-		pipeline.addLast(new IdleStateHandler(5000, 5000, 5000,TimeUnit.MILLISECONDS));
 	}
 
 	public void setTimeout(int timeout) {

@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf8"?>
 <ioc>
-	<factory name="org.jiira.factory.TestFactory">
-		<worker name="org.jiira.logic.test.TestLogicWorker" type="logic"/>
+<!-- 
+	<factory name="org.jiira.factory.HeartFactory">
+		<worker name="org.jiira.logic.heart.HeartLogicWorker" type="logic"/>
 		<worker name="org.jiira.data.netty.tcp.SocketDataWorker" type="data" command=".sock"/>
 	</factory>
+ -->
 	<factory name="org.jiira.factory.LoginFactory">
 		<worker name="org.jiira.logic.login.LoginLogicWorker" type="logic"/>
+		<worker name="org.jiira.logic.login.UserDataLogicWorker" type="logic"/>
 		<worker name="org.jiira.data.netty.tcp.SocketDataWorker" type="data" command=".sock"/>
 	</factory>
 </ioc>

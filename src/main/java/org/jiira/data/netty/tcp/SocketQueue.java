@@ -73,4 +73,10 @@ public class SocketQueue {
 		}
 		SALog.info("用户:" + sqe.getUserID() + " 离线...");
 	}
+	public void remove(ChannelHandlerContext channel) {
+		SocketQueueElement sqe = get(channel);
+		if(null != sqe) {
+			remove(sqe);
+		}
+	}
 }

@@ -8,14 +8,10 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import org.jiira.protobuf.SAProtoDecode;
 
 public class SADataTableManager {
 	// D:/svn/serv/CardServer/config/local/saproto
-	@SuppressWarnings("unused")
 	private static SADataTableManager instance;
 
 	public static SADataTableManager getInstance() {

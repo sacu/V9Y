@@ -29,7 +29,6 @@ public class CommandCollection {
 	public static enum AccountTypeEnum {
 		Offline, //
 		Online, //
-		Battle, //
 		Error, //
 	}
 	public static enum TeamTypeEnum {

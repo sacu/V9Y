@@ -494,9 +494,29 @@ public final class ProtobufType {
   public interface SUserDataOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
-    // required int32 code = 1;
-    boolean hasCode();
-    int getCode();
+    // required int32 id = 1;
+    boolean hasId();
+    int getId();
+    
+    // required string userName = 2;
+    boolean hasUserName();
+    String getUserName();
+    
+    // required string nickName = 3;
+    boolean hasNickName();
+    String getNickName();
+    
+    // required int32 coin = 4;
+    boolean hasCoin();
+    int getCoin();
+    
+    // required int32 diamond = 5;
+    boolean hasDiamond();
+    int getDiamond();
+    
+    // required int32 state = 6;
+    boolean hasState();
+    int getState();
   }
   public static final class SUserData extends
       com.google.protobuf.GeneratedMessage
@@ -527,25 +547,144 @@ public final class ProtobufType {
     }
     
     private int bitField0_;
-    // required int32 code = 1;
-    public static final int CODE_FIELD_NUMBER = 1;
-    private int code_;
-    public boolean hasCode() {
+    // required int32 id = 1;
+    public static final int ID_FIELD_NUMBER = 1;
+    private int id_;
+    public boolean hasId() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
-    public int getCode() {
-      return code_;
+    public int getId() {
+      return id_;
+    }
+    
+    // required string userName = 2;
+    public static final int USERNAME_FIELD_NUMBER = 2;
+    private Object userName_;
+    public boolean hasUserName() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public String getUserName() {
+      Object ref = userName_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          userName_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getUserNameBytes() {
+      Object ref = userName_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        userName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required string nickName = 3;
+    public static final int NICKNAME_FIELD_NUMBER = 3;
+    private Object nickName_;
+    public boolean hasNickName() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public String getNickName() {
+      Object ref = nickName_;
+      if (ref instanceof String) {
+        return (String) ref;
+      } else {
+        com.google.protobuf.ByteString bs = 
+            (com.google.protobuf.ByteString) ref;
+        String s = bs.toStringUtf8();
+        if (com.google.protobuf.Internal.isValidUtf8(bs)) {
+          nickName_ = s;
+        }
+        return s;
+      }
+    }
+    private com.google.protobuf.ByteString getNickNameBytes() {
+      Object ref = nickName_;
+      if (ref instanceof String) {
+        com.google.protobuf.ByteString b = 
+            com.google.protobuf.ByteString.copyFromUtf8((String) ref);
+        nickName_ = b;
+        return b;
+      } else {
+        return (com.google.protobuf.ByteString) ref;
+      }
+    }
+    
+    // required int32 coin = 4;
+    public static final int COIN_FIELD_NUMBER = 4;
+    private int coin_;
+    public boolean hasCoin() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    public int getCoin() {
+      return coin_;
+    }
+    
+    // required int32 diamond = 5;
+    public static final int DIAMOND_FIELD_NUMBER = 5;
+    private int diamond_;
+    public boolean hasDiamond() {
+      return ((bitField0_ & 0x00000010) == 0x00000010);
+    }
+    public int getDiamond() {
+      return diamond_;
+    }
+    
+    // required int32 state = 6;
+    public static final int STATE_FIELD_NUMBER = 6;
+    private int state_;
+    public boolean hasState() {
+      return ((bitField0_ & 0x00000020) == 0x00000020);
+    }
+    public int getState() {
+      return state_;
     }
     
     private void initFields() {
-      code_ = 0;
+      id_ = 0;
+      userName_ = "";
+      nickName_ = "";
+      coin_ = 0;
+      diamond_ = 0;
+      state_ = 0;
     }
     private byte memoizedIsInitialized = -1;
     public final boolean isInitialized() {
       byte isInitialized = memoizedIsInitialized;
       if (isInitialized != -1) return isInitialized == 1;
       
-      if (!hasCode()) {
+      if (!hasId()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasUserName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasNickName()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasCoin()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasDiamond()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasState()) {
         memoizedIsInitialized = 0;
         return false;
       }
@@ -557,7 +696,22 @@ public final class ProtobufType {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeInt32(1, code_);
+        output.writeInt32(1, id_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeBytes(2, getUserNameBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeBytes(3, getNickNameBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, coin_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        output.writeInt32(5, diamond_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        output.writeInt32(6, state_);
       }
       getUnknownFields().writeTo(output);
     }
@@ -570,7 +724,27 @@ public final class ProtobufType {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeInt32Size(1, code_);
+          .computeInt32Size(1, id_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(2, getUserNameBytes());
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeBytesSize(3, getNickNameBytes());
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, coin_);
+      }
+      if (((bitField0_ & 0x00000010) == 0x00000010)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(5, diamond_);
+      }
+      if (((bitField0_ & 0x00000020) == 0x00000020)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(6, state_);
       }
       size += getUnknownFields().getSerializedSize();
       memoizedSerializedSize = size;
@@ -694,8 +868,18 @@ public final class ProtobufType {
       
       public Builder clear() {
         super.clear();
-        code_ = 0;
+        id_ = 0;
         bitField0_ = (bitField0_ & ~0x00000001);
+        userName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000002);
+        nickName_ = "";
+        bitField0_ = (bitField0_ & ~0x00000004);
+        coin_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        diamond_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        state_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000020);
         return this;
       }
       
@@ -737,7 +921,27 @@ public final class ProtobufType {
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        result.code_ = code_;
+        result.id_ = id_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.userName_ = userName_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.nickName_ = nickName_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.coin_ = coin_;
+        if (((from_bitField0_ & 0x00000010) == 0x00000010)) {
+          to_bitField0_ |= 0x00000010;
+        }
+        result.diamond_ = diamond_;
+        if (((from_bitField0_ & 0x00000020) == 0x00000020)) {
+          to_bitField0_ |= 0x00000020;
+        }
+        result.state_ = state_;
         result.bitField0_ = to_bitField0_;
         onBuilt();
         return result;
@@ -754,15 +958,50 @@ public final class ProtobufType {
       
       public Builder mergeFrom(org.jiira.protobuf.ProtobufType.SUserData other) {
         if (other == org.jiira.protobuf.ProtobufType.SUserData.getDefaultInstance()) return this;
-        if (other.hasCode()) {
-          setCode(other.getCode());
+        if (other.hasId()) {
+          setId(other.getId());
+        }
+        if (other.hasUserName()) {
+          setUserName(other.getUserName());
+        }
+        if (other.hasNickName()) {
+          setNickName(other.getNickName());
+        }
+        if (other.hasCoin()) {
+          setCoin(other.getCoin());
+        }
+        if (other.hasDiamond()) {
+          setDiamond(other.getDiamond());
+        }
+        if (other.hasState()) {
+          setState(other.getState());
         }
         this.mergeUnknownFields(other.getUnknownFields());
         return this;
       }
       
       public final boolean isInitialized() {
-        if (!hasCode()) {
+        if (!hasId()) {
+          
+          return false;
+        }
+        if (!hasUserName()) {
+          
+          return false;
+        }
+        if (!hasNickName()) {
+          
+          return false;
+        }
+        if (!hasCoin()) {
+          
+          return false;
+        }
+        if (!hasDiamond()) {
+          
+          return false;
+        }
+        if (!hasState()) {
           
           return false;
         }
@@ -794,7 +1033,32 @@ public final class ProtobufType {
             }
             case 8: {
               bitField0_ |= 0x00000001;
-              code_ = input.readInt32();
+              id_ = input.readInt32();
+              break;
+            }
+            case 18: {
+              bitField0_ |= 0x00000002;
+              userName_ = input.readBytes();
+              break;
+            }
+            case 26: {
+              bitField0_ |= 0x00000004;
+              nickName_ = input.readBytes();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              coin_ = input.readInt32();
+              break;
+            }
+            case 40: {
+              bitField0_ |= 0x00000010;
+              diamond_ = input.readInt32();
+              break;
+            }
+            case 48: {
+              bitField0_ |= 0x00000020;
+              state_ = input.readInt32();
               break;
             }
           }
@@ -803,23 +1067,158 @@ public final class ProtobufType {
       
       private int bitField0_;
       
-      // required int32 code = 1;
-      private int code_ ;
-      public boolean hasCode() {
+      // required int32 id = 1;
+      private int id_ ;
+      public boolean hasId() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
-      public int getCode() {
-        return code_;
+      public int getId() {
+        return id_;
       }
-      public Builder setCode(int value) {
+      public Builder setId(int value) {
         bitField0_ |= 0x00000001;
-        code_ = value;
+        id_ = value;
         onChanged();
         return this;
       }
-      public Builder clearCode() {
+      public Builder clearId() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        code_ = 0;
+        id_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // required string userName = 2;
+      private Object userName_ = "";
+      public boolean hasUserName() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public String getUserName() {
+        Object ref = userName_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          userName_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setUserName(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000002;
+        userName_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearUserName() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        userName_ = getDefaultInstance().getUserName();
+        onChanged();
+        return this;
+      }
+      void setUserName(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000002;
+        userName_ = value;
+        onChanged();
+      }
+      
+      // required string nickName = 3;
+      private Object nickName_ = "";
+      public boolean hasNickName() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public String getNickName() {
+        Object ref = nickName_;
+        if (!(ref instanceof String)) {
+          String s = ((com.google.protobuf.ByteString) ref).toStringUtf8();
+          nickName_ = s;
+          return s;
+        } else {
+          return (String) ref;
+        }
+      }
+      public Builder setNickName(String value) {
+        if (value == null) {
+    throw new NullPointerException();
+  }
+  bitField0_ |= 0x00000004;
+        nickName_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearNickName() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        nickName_ = getDefaultInstance().getNickName();
+        onChanged();
+        return this;
+      }
+      void setNickName(com.google.protobuf.ByteString value) {
+        bitField0_ |= 0x00000004;
+        nickName_ = value;
+        onChanged();
+      }
+      
+      // required int32 coin = 4;
+      private int coin_ ;
+      public boolean hasCoin() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      public int getCoin() {
+        return coin_;
+      }
+      public Builder setCoin(int value) {
+        bitField0_ |= 0x00000008;
+        coin_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearCoin() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        coin_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // required int32 diamond = 5;
+      private int diamond_ ;
+      public boolean hasDiamond() {
+        return ((bitField0_ & 0x00000010) == 0x00000010);
+      }
+      public int getDiamond() {
+        return diamond_;
+      }
+      public Builder setDiamond(int value) {
+        bitField0_ |= 0x00000010;
+        diamond_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearDiamond() {
+        bitField0_ = (bitField0_ & ~0x00000010);
+        diamond_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // required int32 state = 6;
+      private int state_ ;
+      public boolean hasState() {
+        return ((bitField0_ & 0x00000020) == 0x00000020);
+      }
+      public int getState() {
+        return state_;
+      }
+      public Builder setState(int value) {
+        bitField0_ |= 0x00000020;
+        state_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearState() {
+        bitField0_ = (bitField0_ & ~0x00000020);
+        state_ = 0;
         onChanged();
         return this;
       }
@@ -3129,7 +3528,9 @@ public final class ProtobufType {
     java.lang.String[] descriptorData = {
       "\n\016protobuf.proto\022\022org.jiira.protobuf\",\n\006" +
       "CLogin\022\020\n\010userName\030\001 \002(\t\022\020\n\010passWord\030\002 \002" +
-      "(\t\"\031\n\tSUserData\022\014\n\004code\030\001 \002(\005\"\026\n\006SError\022" +
+      "(\t\"i\n\tSUserData\022\n\n\002id\030\001 \002(\005\022\020\n\010userName\030" +
+      "\002 \002(\t\022\020\n\010nickName\030\003 \002(\t\022\014\n\004coin\030\004 \002(\005\022\017\n" +
+      "\007diamond\030\005 \002(\005\022\r\n\005state\030\006 \002(\005\"\026\n\006SError\022" +
       "\014\n\004code\030\001 \002(\005\"J\n\rSSingleUpdate\022\016\n\006userID" +
       "\030\001 \002(\005\022\014\n\004keys\030\002 \003(\005\022\013\n\003IDs\030\003 \003(\005\022\016\n\006cou" +
       "nts\030\004 \003(\005\" \n\005CTest\022\n\n\002id\030\001 \002(\005\022\013\n\003msg\030\002 " +
@@ -3154,7 +3555,7 @@ public final class ProtobufType {
           internal_static_org_jiira_protobuf_SUserData_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_org_jiira_protobuf_SUserData_descriptor,
-              new java.lang.String[] { "Code", },
+              new java.lang.String[] { "Id", "UserName", "NickName", "Coin", "Diamond", "State", },
               org.jiira.protobuf.ProtobufType.SUserData.class,
               org.jiira.protobuf.ProtobufType.SUserData.Builder.class);
           internal_static_org_jiira_protobuf_SError_descriptor =

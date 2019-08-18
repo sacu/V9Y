@@ -2,9 +2,9 @@ package org.jiira;
 
 
 import org.jiira.data.netty.tcp.SocketDataWorker;
-import org.jiira.protobuf.SAProtoDecode;
-import org.jiira.protobuf.SAProtoDecode.STCard;
+import org.jiira.utils.CacheCollection;
 import org.jiira.utils.DBSessionFactory;
+import org.jiira.utils.MITSF;
 import org.jiira.utils.SAAppConfig;
 import org.jiira.utils.SADataTableManager;
 
@@ -34,7 +34,9 @@ public class Launch {
 		SAAppConfig.InitializeConfiguration();//配置文件初始化
 		//sa proto
 		SADataTableManager.getInstance().readDataTable();//读取数据表
-//		DBSessionFactory.init();//数据库链接初始化
+		DBSessionFactory.init();//数据库链接初始化
+		MITSF.init();//初始化Mybatis反射工厂
+		CacheCollection.getInstance().readCache();//初始化缓存数据(需要在IOC之前)
 		//读取数据库
 //		CacheFactory.getInstance().readCache();//初始化缓存数据(需要在IOC之前)
 		SAIOCManager.getInstance().loadIOC("config/" + SAAppConfig.getZone() + "/ioc.xml");//ioc 初始化

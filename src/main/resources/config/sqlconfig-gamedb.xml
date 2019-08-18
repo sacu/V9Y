@@ -45,13 +45,9 @@
 	</environments>
 
 	<mappers>
-        <mapper resource="sql/CardMapping.xml" />
-        <mapper resource="sql/CardGroupMapping.xml" />
-        <mapper resource="sql/FirendMapping.xml" />
-        <mapper resource="sql/ItemMapping.xml" />
-        <mapper resource="sql/UserMapping.xml" />
-        <mapper resource="sql/CardEquipMapping.xml" />
-        <mapper resource="sql/MissionMapping.xml" />
+			<!-- 额~不想把xml放到类路径里 -->
+<!-- 		<package name="org.jiira.data.mybatis.dao"/> -->
+         <mapper resource="mapper/UserMapping.xml" />
 	</mappers>
 
 </configuration>

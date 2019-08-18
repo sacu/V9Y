@@ -28,7 +28,6 @@ public class DBSessionFactory {
 	private static Map<String, String> connectionUrlMap = new HashMap<String, String>();
 	// dbname,sqlSessionFactory
 	private static Map<String, SqlSessionFactory> sqlSessionFactoryMap = new HashMap<String, SqlSessionFactory>();
-	private static Map<String, SqlSessionFactory> sqlSessionFactoryForSelectMap = new HashMap<String, SqlSessionFactory>();
 
 	private static final String CONFIG_BASEDIR = "config/";
 	// 测试标识
@@ -37,7 +36,6 @@ public class DBSessionFactory {
 	public static void init() {
 		useSlaveDB.clear();
 		sqlSessionFactoryMap.clear();
-		sqlSessionFactoryForSelectMap.clear();
 		InputStream is = null;
 		try {
 			// local
@@ -68,28 +66,6 @@ public class DBSessionFactory {
                     continue;
                 }
 
-                //从数据库
-                propertiesFilePath = new StringBuilder();
-                propertiesFilePath.append(CONFIG_BASEDIR);
-                propertiesFilePath.append("/");
-                propertiesFilePath.append(zone);
-                propertiesFilePath.append("/slave-");
-                propertiesFilePath.append(entry.getValue().propertiesFilename);
-                try {
-                    is = new FileInputStream(propertiesFilePath.toString());
-                    properties.load(is);
-                    connectionUrlMap.put(entry.getKey() + "-slave", properties.getProperty("url"));
-                    is = Resources.getResourceAsStream(CONFIG_BASEDIR + entry.getValue().configXmlFilename);
-                    sqlSessionFactoryForSelectMap.put(entry.getKey(), new SqlSessionFactoryBuilder().build(is, properties));
-                    if(sqlSessionFactoryForSelectMap.get(entry.getKey()) == null) {
-                    	SALog.info("连接会话异常 : " + entry.getKey());
-                    }
-                    useSlaveDB.put(entry.getKey(), true);
-                    SALog.info("启动数据库 : " + entry.getKey());
-                } catch (FileNotFoundException e) {
-                	SALog.info("数据库不存在");
-                    useSlaveDB.put(entry.getKey(), false);
-                }
                 SALog.info("数据库 : " + entry.getKey() + " 加在完毕");
             }
 		} catch (IOException e) {
@@ -134,35 +110,6 @@ public class DBSessionFactory {
 
 	public static boolean isUseSlaveDB(String dbId) {
 		return useSlaveDB.get(dbId);
-	}
-
-	public static SqlSessionFactory getSqlSessionFactoryForSelect(String dbId) {
-		if (DEBUG_FLAG) {
-			return sqlSessionFactoryMap.get("gamedb");
-		}
-
-		if (SystemConfig.instance().isEnableDBShard() == false) {
-			return sqlSessionFactoryForSelectMap.get("gamedb");
-		}
-
-		return sqlSessionFactoryForSelectMap.get(dbId);
-	}
-
-	public static SqlSessionFactory getSqlSessionFactoryForSelectShardSlave(
-			String gsn) {
-
-		if (DEBUG_FLAG) {
-			return sqlSessionFactoryMap.get("gamedb");
-		}
-
-		if (SystemConfig.instance().isEnableDBShard() == false) {
-			return sqlSessionFactoryForSelectMap.get("gamedb");
-		}
-
-		BigInteger gsnNumber = new BigInteger(gsn);
-		int resultHash = gsnNumber.mod(new BigInteger("2")).intValue();
-		String dbId = String.format("gamedb%02d", resultHash + 1);
-		return sqlSessionFactoryForSelectMap.get(dbId);
 	}
 
 	public static Map<String, Boolean> getUseSlaveDB() {
