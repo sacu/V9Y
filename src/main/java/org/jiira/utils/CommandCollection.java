@@ -5,6 +5,11 @@ public class CommandCollection {
 	public static enum ProtoTypeEnum {
 		CLogin, //
 		SUserData, //
+		CEnterRoom, //
+		COutRoom, //
+		SOutRoom, //
+		SFishChapter, //
+		CHangUpRoom, //
 		SError, //
 		SSingleUpdate, //
 		CTest, //
@@ -12,9 +17,10 @@ public class CommandCollection {
 		CHeart, //
 	}
 	public static enum GameTypeEnum {
-		Leisure, //休闲模式
-		Competition, //竞技模式
-		Gay, //约战
+		None, //无
+		FishSimple, //初级捕鱼
+		FishOrdinary, //中级捕鱼
+		FishDifficultie, //高级捕鱼
 	}
 	public static enum RankTypeEnum {
 		Leisure, //
@@ -71,18 +77,13 @@ public class CommandCollection {
 		NickNameExistError, //昵称已存在
 		AccountIsFoundError, //用户已存在
 		AccountCreateError, //用户创建失败
-		CardGroupError, //卡组设置失败
-		BuyCardError, //卡牌合成失败
-		SellCardError, //卡牌分解失败
-		MatchRivalError, //请求匹配失败
-		CancelMatchError, //取消匹配失败
-		SettingDefaultCardGroupError, //默认卡组设置失败
 		AccountError, //帐号异常
 		RepeatLoginError, //帐号已在登录状态
 		AccountOfflineError, //目标用户是离线状态
 		BalanceIsNotEnoughError, //余额不足
 		DataBaseError, //数据库操作失败
-		CoolingTimeDidNoArriveError, //冷却时间未结束
+		NoFoundFishRoomError, //房间不存在
+		NoJoinFishRoomError, //没有加入这个房间
 		FirendListError, //获取好友列表失败
 		FirendInfoError, //获取好友信息失败
 		AddFirendError, //添加好友失败
@@ -194,6 +195,8 @@ public class CommandCollection {
 	public final static String Sock = ".sock";
 	public final static String DB_ID_BASETABLE = "gamedb";
 	public final static boolean EnableAutocommit = true;
+	public final static int FISH_ROOM_MAX = 1000;
+	public final static int FISH_ROOM_USER_MAX = 4;
 	public final static int SOCK_TYPE_LENGTH = 2;
 	public final static int SOCK_CONTEXT_LENGTH = 2;
 	public final static int SOCK_HEAD_LENGTH = 4;
@@ -209,6 +212,21 @@ public class CommandCollection {
 				}
 				case SUserData:{
 					return SUserData.parseFrom(bytes);
+				}
+				case CEnterRoom:{
+					return CEnterRoom.parseFrom(bytes);
+				}
+				case COutRoom:{
+					return COutRoom.parseFrom(bytes);
+				}
+				case SOutRoom:{
+					return SOutRoom.parseFrom(bytes);
+				}
+				case SFishChapter:{
+					return SFishChapter.parseFrom(bytes);
+				}
+				case CHangUpRoom:{
+					return CHangUpRoom.parseFrom(bytes);
 				}
 				case SError:{
 					return SError.parseFrom(bytes);

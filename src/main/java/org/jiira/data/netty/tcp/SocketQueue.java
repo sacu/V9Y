@@ -3,6 +3,10 @@ package org.jiira.data.netty.tcp;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
+import org.jiira.data.mybatis.pojo.User;
+import org.jiira.utils.CacheCollection;
+import org.jiira.utils.CommandCollection.AccountTypeEnum;
+
 import core.utils.SALog;
 import io.netty.channel.ChannelHandlerContext;
 
@@ -71,6 +75,13 @@ public class SocketQueue {
 		if(idMapQueue.containsKey(sqe.getUserID())){
 			idMapQueue.remove(sqe.getUserID());
 		}
+		//处理用户房间和状态
+		User user = CacheCollection.getInstance().getUserModelByID(sqe.getUserID());
+		user.setState(AccountTypeEnum.Offline);
+		if(null != user.getRoomName()) {
+			CacheCollection.getInstance().outFishRoom(user);
+		}
+		user.setRoomName(null);
 		SALog.info("用户:" + sqe.getUserID() + " 离线...");
 	}
 	public void remove(ChannelHandlerContext channel) {

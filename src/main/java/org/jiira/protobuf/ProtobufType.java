@@ -1234,6 +1234,1857 @@ public final class ProtobufType {
     // @@protoc_insertion_point(class_scope:org.jiira.protobuf.SUserData)
   }
   
+  public interface CEnterRoomOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+  }
+  public static final class CEnterRoom extends
+      com.google.protobuf.GeneratedMessage
+      implements CEnterRoomOrBuilder {
+    // Use CEnterRoom.newBuilder() to construct.
+    private CEnterRoom(Builder builder) {
+      super(builder);
+    }
+    private CEnterRoom(boolean noInit) {}
+    
+    private static final CEnterRoom defaultInstance;
+    public static CEnterRoom getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public CEnterRoom getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_CEnterRoom_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_CEnterRoom_fieldAccessorTable;
+    }
+    
+    private void initFields() {
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    @java.lang.Override
+    protected Object writeReplace() throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static org.jiira.protobuf.ProtobufType.CEnterRoom parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.CEnterRoom parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.CEnterRoom parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.CEnterRoom parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.CEnterRoom parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.CEnterRoom parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.CEnterRoom parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static org.jiira.protobuf.ProtobufType.CEnterRoom parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static org.jiira.protobuf.ProtobufType.CEnterRoom parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.CEnterRoom parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.jiira.protobuf.ProtobufType.CEnterRoom prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements org.jiira.protobuf.ProtobufType.CEnterRoomOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_CEnterRoom_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_CEnterRoom_fieldAccessorTable;
+      }
+      
+      // Construct using org.jiira.protobuf.ProtobufType.CEnterRoom.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.jiira.protobuf.ProtobufType.CEnterRoom.getDescriptor();
+      }
+      
+      public org.jiira.protobuf.ProtobufType.CEnterRoom getDefaultInstanceForType() {
+        return org.jiira.protobuf.ProtobufType.CEnterRoom.getDefaultInstance();
+      }
+      
+      public org.jiira.protobuf.ProtobufType.CEnterRoom build() {
+        org.jiira.protobuf.ProtobufType.CEnterRoom result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private org.jiira.protobuf.ProtobufType.CEnterRoom buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        org.jiira.protobuf.ProtobufType.CEnterRoom result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public org.jiira.protobuf.ProtobufType.CEnterRoom buildPartial() {
+        org.jiira.protobuf.ProtobufType.CEnterRoom result = new org.jiira.protobuf.ProtobufType.CEnterRoom(this);
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.jiira.protobuf.ProtobufType.CEnterRoom) {
+          return mergeFrom((org.jiira.protobuf.ProtobufType.CEnterRoom)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(org.jiira.protobuf.ProtobufType.CEnterRoom other) {
+        if (other == org.jiira.protobuf.ProtobufType.CEnterRoom.getDefaultInstance()) return this;
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+          }
+        }
+      }
+      
+      
+      // @@protoc_insertion_point(builder_scope:org.jiira.protobuf.CEnterRoom)
+    }
+    
+    static {
+      defaultInstance = new CEnterRoom(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:org.jiira.protobuf.CEnterRoom)
+  }
+  
+  public interface COutRoomOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+  }
+  public static final class COutRoom extends
+      com.google.protobuf.GeneratedMessage
+      implements COutRoomOrBuilder {
+    // Use COutRoom.newBuilder() to construct.
+    private COutRoom(Builder builder) {
+      super(builder);
+    }
+    private COutRoom(boolean noInit) {}
+    
+    private static final COutRoom defaultInstance;
+    public static COutRoom getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public COutRoom getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_COutRoom_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_COutRoom_fieldAccessorTable;
+    }
+    
+    private void initFields() {
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    @java.lang.Override
+    protected Object writeReplace() throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static org.jiira.protobuf.ProtobufType.COutRoom parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.COutRoom parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.COutRoom parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.COutRoom parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.COutRoom parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.COutRoom parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.COutRoom parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static org.jiira.protobuf.ProtobufType.COutRoom parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static org.jiira.protobuf.ProtobufType.COutRoom parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.COutRoom parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.jiira.protobuf.ProtobufType.COutRoom prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements org.jiira.protobuf.ProtobufType.COutRoomOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_COutRoom_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_COutRoom_fieldAccessorTable;
+      }
+      
+      // Construct using org.jiira.protobuf.ProtobufType.COutRoom.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.jiira.protobuf.ProtobufType.COutRoom.getDescriptor();
+      }
+      
+      public org.jiira.protobuf.ProtobufType.COutRoom getDefaultInstanceForType() {
+        return org.jiira.protobuf.ProtobufType.COutRoom.getDefaultInstance();
+      }
+      
+      public org.jiira.protobuf.ProtobufType.COutRoom build() {
+        org.jiira.protobuf.ProtobufType.COutRoom result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private org.jiira.protobuf.ProtobufType.COutRoom buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        org.jiira.protobuf.ProtobufType.COutRoom result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public org.jiira.protobuf.ProtobufType.COutRoom buildPartial() {
+        org.jiira.protobuf.ProtobufType.COutRoom result = new org.jiira.protobuf.ProtobufType.COutRoom(this);
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.jiira.protobuf.ProtobufType.COutRoom) {
+          return mergeFrom((org.jiira.protobuf.ProtobufType.COutRoom)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(org.jiira.protobuf.ProtobufType.COutRoom other) {
+        if (other == org.jiira.protobuf.ProtobufType.COutRoom.getDefaultInstance()) return this;
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+          }
+        }
+      }
+      
+      
+      // @@protoc_insertion_point(builder_scope:org.jiira.protobuf.COutRoom)
+    }
+    
+    static {
+      defaultInstance = new COutRoom(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:org.jiira.protobuf.COutRoom)
+  }
+  
+  public interface SOutRoomOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+  }
+  public static final class SOutRoom extends
+      com.google.protobuf.GeneratedMessage
+      implements SOutRoomOrBuilder {
+    // Use SOutRoom.newBuilder() to construct.
+    private SOutRoom(Builder builder) {
+      super(builder);
+    }
+    private SOutRoom(boolean noInit) {}
+    
+    private static final SOutRoom defaultInstance;
+    public static SOutRoom getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public SOutRoom getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_SOutRoom_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_SOutRoom_fieldAccessorTable;
+    }
+    
+    private void initFields() {
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    @java.lang.Override
+    protected Object writeReplace() throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static org.jiira.protobuf.ProtobufType.SOutRoom parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.SOutRoom parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.SOutRoom parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.SOutRoom parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.SOutRoom parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.SOutRoom parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.SOutRoom parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static org.jiira.protobuf.ProtobufType.SOutRoom parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static org.jiira.protobuf.ProtobufType.SOutRoom parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.SOutRoom parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.jiira.protobuf.ProtobufType.SOutRoom prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements org.jiira.protobuf.ProtobufType.SOutRoomOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_SOutRoom_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_SOutRoom_fieldAccessorTable;
+      }
+      
+      // Construct using org.jiira.protobuf.ProtobufType.SOutRoom.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.jiira.protobuf.ProtobufType.SOutRoom.getDescriptor();
+      }
+      
+      public org.jiira.protobuf.ProtobufType.SOutRoom getDefaultInstanceForType() {
+        return org.jiira.protobuf.ProtobufType.SOutRoom.getDefaultInstance();
+      }
+      
+      public org.jiira.protobuf.ProtobufType.SOutRoom build() {
+        org.jiira.protobuf.ProtobufType.SOutRoom result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private org.jiira.protobuf.ProtobufType.SOutRoom buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        org.jiira.protobuf.ProtobufType.SOutRoom result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public org.jiira.protobuf.ProtobufType.SOutRoom buildPartial() {
+        org.jiira.protobuf.ProtobufType.SOutRoom result = new org.jiira.protobuf.ProtobufType.SOutRoom(this);
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.jiira.protobuf.ProtobufType.SOutRoom) {
+          return mergeFrom((org.jiira.protobuf.ProtobufType.SOutRoom)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(org.jiira.protobuf.ProtobufType.SOutRoom other) {
+        if (other == org.jiira.protobuf.ProtobufType.SOutRoom.getDefaultInstance()) return this;
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+          }
+        }
+      }
+      
+      
+      // @@protoc_insertion_point(builder_scope:org.jiira.protobuf.SOutRoom)
+    }
+    
+    static {
+      defaultInstance = new SOutRoom(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:org.jiira.protobuf.SOutRoom)
+  }
+  
+  public interface SFishChapterOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+    
+    // required int32 roomID = 1;
+    boolean hasRoomID();
+    int getRoomID();
+    
+    // required int64 startTime = 2;
+    boolean hasStartTime();
+    long getStartTime();
+    
+    // required int64 currentTime = 3;
+    boolean hasCurrentTime();
+    long getCurrentTime();
+    
+    // required int32 chapterID = 4;
+    boolean hasChapterID();
+    int getChapterID();
+    
+    // repeated int32 fishList = 5;
+    java.util.List<java.lang.Integer> getFishListList();
+    int getFishListCount();
+    int getFishList(int index);
+    
+    // repeated int32 userList = 6;
+    java.util.List<java.lang.Integer> getUserListList();
+    int getUserListCount();
+    int getUserList(int index);
+  }
+  public static final class SFishChapter extends
+      com.google.protobuf.GeneratedMessage
+      implements SFishChapterOrBuilder {
+    // Use SFishChapter.newBuilder() to construct.
+    private SFishChapter(Builder builder) {
+      super(builder);
+    }
+    private SFishChapter(boolean noInit) {}
+    
+    private static final SFishChapter defaultInstance;
+    public static SFishChapter getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public SFishChapter getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_SFishChapter_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_SFishChapter_fieldAccessorTable;
+    }
+    
+    private int bitField0_;
+    // required int32 roomID = 1;
+    public static final int ROOMID_FIELD_NUMBER = 1;
+    private int roomID_;
+    public boolean hasRoomID() {
+      return ((bitField0_ & 0x00000001) == 0x00000001);
+    }
+    public int getRoomID() {
+      return roomID_;
+    }
+    
+    // required int64 startTime = 2;
+    public static final int STARTTIME_FIELD_NUMBER = 2;
+    private long startTime_;
+    public boolean hasStartTime() {
+      return ((bitField0_ & 0x00000002) == 0x00000002);
+    }
+    public long getStartTime() {
+      return startTime_;
+    }
+    
+    // required int64 currentTime = 3;
+    public static final int CURRENTTIME_FIELD_NUMBER = 3;
+    private long currentTime_;
+    public boolean hasCurrentTime() {
+      return ((bitField0_ & 0x00000004) == 0x00000004);
+    }
+    public long getCurrentTime() {
+      return currentTime_;
+    }
+    
+    // required int32 chapterID = 4;
+    public static final int CHAPTERID_FIELD_NUMBER = 4;
+    private int chapterID_;
+    public boolean hasChapterID() {
+      return ((bitField0_ & 0x00000008) == 0x00000008);
+    }
+    public int getChapterID() {
+      return chapterID_;
+    }
+    
+    // repeated int32 fishList = 5;
+    public static final int FISHLIST_FIELD_NUMBER = 5;
+    private java.util.List<java.lang.Integer> fishList_;
+    public java.util.List<java.lang.Integer>
+        getFishListList() {
+      return fishList_;
+    }
+    public int getFishListCount() {
+      return fishList_.size();
+    }
+    public int getFishList(int index) {
+      return fishList_.get(index);
+    }
+    
+    // repeated int32 userList = 6;
+    public static final int USERLIST_FIELD_NUMBER = 6;
+    private java.util.List<java.lang.Integer> userList_;
+    public java.util.List<java.lang.Integer>
+        getUserListList() {
+      return userList_;
+    }
+    public int getUserListCount() {
+      return userList_.size();
+    }
+    public int getUserList(int index) {
+      return userList_.get(index);
+    }
+    
+    private void initFields() {
+      roomID_ = 0;
+      startTime_ = 0L;
+      currentTime_ = 0L;
+      chapterID_ = 0;
+      fishList_ = java.util.Collections.emptyList();;
+      userList_ = java.util.Collections.emptyList();;
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      if (!hasRoomID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasStartTime()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasCurrentTime()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      if (!hasChapterID()) {
+        memoizedIsInitialized = 0;
+        return false;
+      }
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        output.writeInt32(1, roomID_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        output.writeInt64(2, startTime_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        output.writeInt64(3, currentTime_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        output.writeInt32(4, chapterID_);
+      }
+      for (int i = 0; i < fishList_.size(); i++) {
+        output.writeInt32(5, fishList_.get(i));
+      }
+      for (int i = 0; i < userList_.size(); i++) {
+        output.writeInt32(6, userList_.get(i));
+      }
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      if (((bitField0_ & 0x00000001) == 0x00000001)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(1, roomID_);
+      }
+      if (((bitField0_ & 0x00000002) == 0x00000002)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(2, startTime_);
+      }
+      if (((bitField0_ & 0x00000004) == 0x00000004)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt64Size(3, currentTime_);
+      }
+      if (((bitField0_ & 0x00000008) == 0x00000008)) {
+        size += com.google.protobuf.CodedOutputStream
+          .computeInt32Size(4, chapterID_);
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < fishList_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt32SizeNoTag(fishList_.get(i));
+        }
+        size += dataSize;
+        size += 1 * getFishListList().size();
+      }
+      {
+        int dataSize = 0;
+        for (int i = 0; i < userList_.size(); i++) {
+          dataSize += com.google.protobuf.CodedOutputStream
+            .computeInt32SizeNoTag(userList_.get(i));
+        }
+        size += dataSize;
+        size += 1 * getUserListList().size();
+      }
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    @java.lang.Override
+    protected Object writeReplace() throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static org.jiira.protobuf.ProtobufType.SFishChapter parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.SFishChapter parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.SFishChapter parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.SFishChapter parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.SFishChapter parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.SFishChapter parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.SFishChapter parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static org.jiira.protobuf.ProtobufType.SFishChapter parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static org.jiira.protobuf.ProtobufType.SFishChapter parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.SFishChapter parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.jiira.protobuf.ProtobufType.SFishChapter prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements org.jiira.protobuf.ProtobufType.SFishChapterOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_SFishChapter_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_SFishChapter_fieldAccessorTable;
+      }
+      
+      // Construct using org.jiira.protobuf.ProtobufType.SFishChapter.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        roomID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000001);
+        startTime_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000002);
+        currentTime_ = 0L;
+        bitField0_ = (bitField0_ & ~0x00000004);
+        chapterID_ = 0;
+        bitField0_ = (bitField0_ & ~0x00000008);
+        fishList_ = java.util.Collections.emptyList();;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        userList_ = java.util.Collections.emptyList();;
+        bitField0_ = (bitField0_ & ~0x00000020);
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.jiira.protobuf.ProtobufType.SFishChapter.getDescriptor();
+      }
+      
+      public org.jiira.protobuf.ProtobufType.SFishChapter getDefaultInstanceForType() {
+        return org.jiira.protobuf.ProtobufType.SFishChapter.getDefaultInstance();
+      }
+      
+      public org.jiira.protobuf.ProtobufType.SFishChapter build() {
+        org.jiira.protobuf.ProtobufType.SFishChapter result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private org.jiira.protobuf.ProtobufType.SFishChapter buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        org.jiira.protobuf.ProtobufType.SFishChapter result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public org.jiira.protobuf.ProtobufType.SFishChapter buildPartial() {
+        org.jiira.protobuf.ProtobufType.SFishChapter result = new org.jiira.protobuf.ProtobufType.SFishChapter(this);
+        int from_bitField0_ = bitField0_;
+        int to_bitField0_ = 0;
+        if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
+          to_bitField0_ |= 0x00000001;
+        }
+        result.roomID_ = roomID_;
+        if (((from_bitField0_ & 0x00000002) == 0x00000002)) {
+          to_bitField0_ |= 0x00000002;
+        }
+        result.startTime_ = startTime_;
+        if (((from_bitField0_ & 0x00000004) == 0x00000004)) {
+          to_bitField0_ |= 0x00000004;
+        }
+        result.currentTime_ = currentTime_;
+        if (((from_bitField0_ & 0x00000008) == 0x00000008)) {
+          to_bitField0_ |= 0x00000008;
+        }
+        result.chapterID_ = chapterID_;
+        if (((bitField0_ & 0x00000010) == 0x00000010)) {
+          fishList_ = java.util.Collections.unmodifiableList(fishList_);
+          bitField0_ = (bitField0_ & ~0x00000010);
+        }
+        result.fishList_ = fishList_;
+        if (((bitField0_ & 0x00000020) == 0x00000020)) {
+          userList_ = java.util.Collections.unmodifiableList(userList_);
+          bitField0_ = (bitField0_ & ~0x00000020);
+        }
+        result.userList_ = userList_;
+        result.bitField0_ = to_bitField0_;
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.jiira.protobuf.ProtobufType.SFishChapter) {
+          return mergeFrom((org.jiira.protobuf.ProtobufType.SFishChapter)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(org.jiira.protobuf.ProtobufType.SFishChapter other) {
+        if (other == org.jiira.protobuf.ProtobufType.SFishChapter.getDefaultInstance()) return this;
+        if (other.hasRoomID()) {
+          setRoomID(other.getRoomID());
+        }
+        if (other.hasStartTime()) {
+          setStartTime(other.getStartTime());
+        }
+        if (other.hasCurrentTime()) {
+          setCurrentTime(other.getCurrentTime());
+        }
+        if (other.hasChapterID()) {
+          setChapterID(other.getChapterID());
+        }
+        if (!other.fishList_.isEmpty()) {
+          if (fishList_.isEmpty()) {
+            fishList_ = other.fishList_;
+            bitField0_ = (bitField0_ & ~0x00000010);
+          } else {
+            ensureFishListIsMutable();
+            fishList_.addAll(other.fishList_);
+          }
+          onChanged();
+        }
+        if (!other.userList_.isEmpty()) {
+          if (userList_.isEmpty()) {
+            userList_ = other.userList_;
+            bitField0_ = (bitField0_ & ~0x00000020);
+          } else {
+            ensureUserListIsMutable();
+            userList_.addAll(other.userList_);
+          }
+          onChanged();
+        }
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        if (!hasRoomID()) {
+          
+          return false;
+        }
+        if (!hasStartTime()) {
+          
+          return false;
+        }
+        if (!hasCurrentTime()) {
+          
+          return false;
+        }
+        if (!hasChapterID()) {
+          
+          return false;
+        }
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+            case 8: {
+              bitField0_ |= 0x00000001;
+              roomID_ = input.readInt32();
+              break;
+            }
+            case 16: {
+              bitField0_ |= 0x00000002;
+              startTime_ = input.readInt64();
+              break;
+            }
+            case 24: {
+              bitField0_ |= 0x00000004;
+              currentTime_ = input.readInt64();
+              break;
+            }
+            case 32: {
+              bitField0_ |= 0x00000008;
+              chapterID_ = input.readInt32();
+              break;
+            }
+            case 40: {
+              ensureFishListIsMutable();
+              fishList_.add(input.readInt32());
+              break;
+            }
+            case 42: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              while (input.getBytesUntilLimit() > 0) {
+                addFishList(input.readInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+            case 48: {
+              ensureUserListIsMutable();
+              userList_.add(input.readInt32());
+              break;
+            }
+            case 50: {
+              int length = input.readRawVarint32();
+              int limit = input.pushLimit(length);
+              while (input.getBytesUntilLimit() > 0) {
+                addUserList(input.readInt32());
+              }
+              input.popLimit(limit);
+              break;
+            }
+          }
+        }
+      }
+      
+      private int bitField0_;
+      
+      // required int32 roomID = 1;
+      private int roomID_ ;
+      public boolean hasRoomID() {
+        return ((bitField0_ & 0x00000001) == 0x00000001);
+      }
+      public int getRoomID() {
+        return roomID_;
+      }
+      public Builder setRoomID(int value) {
+        bitField0_ |= 0x00000001;
+        roomID_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearRoomID() {
+        bitField0_ = (bitField0_ & ~0x00000001);
+        roomID_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // required int64 startTime = 2;
+      private long startTime_ ;
+      public boolean hasStartTime() {
+        return ((bitField0_ & 0x00000002) == 0x00000002);
+      }
+      public long getStartTime() {
+        return startTime_;
+      }
+      public Builder setStartTime(long value) {
+        bitField0_ |= 0x00000002;
+        startTime_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearStartTime() {
+        bitField0_ = (bitField0_ & ~0x00000002);
+        startTime_ = 0L;
+        onChanged();
+        return this;
+      }
+      
+      // required int64 currentTime = 3;
+      private long currentTime_ ;
+      public boolean hasCurrentTime() {
+        return ((bitField0_ & 0x00000004) == 0x00000004);
+      }
+      public long getCurrentTime() {
+        return currentTime_;
+      }
+      public Builder setCurrentTime(long value) {
+        bitField0_ |= 0x00000004;
+        currentTime_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearCurrentTime() {
+        bitField0_ = (bitField0_ & ~0x00000004);
+        currentTime_ = 0L;
+        onChanged();
+        return this;
+      }
+      
+      // required int32 chapterID = 4;
+      private int chapterID_ ;
+      public boolean hasChapterID() {
+        return ((bitField0_ & 0x00000008) == 0x00000008);
+      }
+      public int getChapterID() {
+        return chapterID_;
+      }
+      public Builder setChapterID(int value) {
+        bitField0_ |= 0x00000008;
+        chapterID_ = value;
+        onChanged();
+        return this;
+      }
+      public Builder clearChapterID() {
+        bitField0_ = (bitField0_ & ~0x00000008);
+        chapterID_ = 0;
+        onChanged();
+        return this;
+      }
+      
+      // repeated int32 fishList = 5;
+      private java.util.List<java.lang.Integer> fishList_ = java.util.Collections.emptyList();;
+      private void ensureFishListIsMutable() {
+        if (!((bitField0_ & 0x00000010) == 0x00000010)) {
+          fishList_ = new java.util.ArrayList<java.lang.Integer>(fishList_);
+          bitField0_ |= 0x00000010;
+         }
+      }
+      public java.util.List<java.lang.Integer>
+          getFishListList() {
+        return java.util.Collections.unmodifiableList(fishList_);
+      }
+      public int getFishListCount() {
+        return fishList_.size();
+      }
+      public int getFishList(int index) {
+        return fishList_.get(index);
+      }
+      public Builder setFishList(
+          int index, int value) {
+        ensureFishListIsMutable();
+        fishList_.set(index, value);
+        onChanged();
+        return this;
+      }
+      public Builder addFishList(int value) {
+        ensureFishListIsMutable();
+        fishList_.add(value);
+        onChanged();
+        return this;
+      }
+      public Builder addAllFishList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureFishListIsMutable();
+        super.addAll(values, fishList_);
+        onChanged();
+        return this;
+      }
+      public Builder clearFishList() {
+        fishList_ = java.util.Collections.emptyList();;
+        bitField0_ = (bitField0_ & ~0x00000010);
+        onChanged();
+        return this;
+      }
+      
+      // repeated int32 userList = 6;
+      private java.util.List<java.lang.Integer> userList_ = java.util.Collections.emptyList();;
+      private void ensureUserListIsMutable() {
+        if (!((bitField0_ & 0x00000020) == 0x00000020)) {
+          userList_ = new java.util.ArrayList<java.lang.Integer>(userList_);
+          bitField0_ |= 0x00000020;
+         }
+      }
+      public java.util.List<java.lang.Integer>
+          getUserListList() {
+        return java.util.Collections.unmodifiableList(userList_);
+      }
+      public int getUserListCount() {
+        return userList_.size();
+      }
+      public int getUserList(int index) {
+        return userList_.get(index);
+      }
+      public Builder setUserList(
+          int index, int value) {
+        ensureUserListIsMutable();
+        userList_.set(index, value);
+        onChanged();
+        return this;
+      }
+      public Builder addUserList(int value) {
+        ensureUserListIsMutable();
+        userList_.add(value);
+        onChanged();
+        return this;
+      }
+      public Builder addAllUserList(
+          java.lang.Iterable<? extends java.lang.Integer> values) {
+        ensureUserListIsMutable();
+        super.addAll(values, userList_);
+        onChanged();
+        return this;
+      }
+      public Builder clearUserList() {
+        userList_ = java.util.Collections.emptyList();;
+        bitField0_ = (bitField0_ & ~0x00000020);
+        onChanged();
+        return this;
+      }
+      
+      // @@protoc_insertion_point(builder_scope:org.jiira.protobuf.SFishChapter)
+    }
+    
+    static {
+      defaultInstance = new SFishChapter(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:org.jiira.protobuf.SFishChapter)
+  }
+  
+  public interface CHangUpRoomOrBuilder
+      extends com.google.protobuf.MessageOrBuilder {
+  }
+  public static final class CHangUpRoom extends
+      com.google.protobuf.GeneratedMessage
+      implements CHangUpRoomOrBuilder {
+    // Use CHangUpRoom.newBuilder() to construct.
+    private CHangUpRoom(Builder builder) {
+      super(builder);
+    }
+    private CHangUpRoom(boolean noInit) {}
+    
+    private static final CHangUpRoom defaultInstance;
+    public static CHangUpRoom getDefaultInstance() {
+      return defaultInstance;
+    }
+    
+    public CHangUpRoom getDefaultInstanceForType() {
+      return defaultInstance;
+    }
+    
+    public static final com.google.protobuf.Descriptors.Descriptor
+        getDescriptor() {
+      return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_CHangUpRoom_descriptor;
+    }
+    
+    protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+        internalGetFieldAccessorTable() {
+      return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_CHangUpRoom_fieldAccessorTable;
+    }
+    
+    private void initFields() {
+    }
+    private byte memoizedIsInitialized = -1;
+    public final boolean isInitialized() {
+      byte isInitialized = memoizedIsInitialized;
+      if (isInitialized != -1) return isInitialized == 1;
+      
+      memoizedIsInitialized = 1;
+      return true;
+    }
+    
+    public void writeTo(com.google.protobuf.CodedOutputStream output)
+                        throws java.io.IOException {
+      getSerializedSize();
+      getUnknownFields().writeTo(output);
+    }
+    
+    private int memoizedSerializedSize = -1;
+    public int getSerializedSize() {
+      int size = memoizedSerializedSize;
+      if (size != -1) return size;
+    
+      size = 0;
+      size += getUnknownFields().getSerializedSize();
+      memoizedSerializedSize = size;
+      return size;
+    }
+    
+    @java.lang.Override
+    protected Object writeReplace() throws java.io.ObjectStreamException {
+      return super.writeReplace();
+    }
+    
+    public static org.jiira.protobuf.ProtobufType.CHangUpRoom parseFrom(
+        com.google.protobuf.ByteString data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.CHangUpRoom parseFrom(
+        com.google.protobuf.ByteString data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.CHangUpRoom parseFrom(byte[] data)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.CHangUpRoom parseFrom(
+        byte[] data,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws com.google.protobuf.InvalidProtocolBufferException {
+      return newBuilder().mergeFrom(data, extensionRegistry)
+               .buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.CHangUpRoom parseFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.CHangUpRoom parseFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.CHangUpRoom parseDelimitedFrom(java.io.InputStream input)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static org.jiira.protobuf.ProtobufType.CHangUpRoom parseDelimitedFrom(
+        java.io.InputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      Builder builder = newBuilder();
+      if (builder.mergeDelimitedFrom(input, extensionRegistry)) {
+        return builder.buildParsed();
+      } else {
+        return null;
+      }
+    }
+    public static org.jiira.protobuf.ProtobufType.CHangUpRoom parseFrom(
+        com.google.protobuf.CodedInputStream input)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input).buildParsed();
+    }
+    public static org.jiira.protobuf.ProtobufType.CHangUpRoom parseFrom(
+        com.google.protobuf.CodedInputStream input,
+        com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+        throws java.io.IOException {
+      return newBuilder().mergeFrom(input, extensionRegistry)
+               .buildParsed();
+    }
+    
+    public static Builder newBuilder() { return Builder.create(); }
+    public Builder newBuilderForType() { return newBuilder(); }
+    public static Builder newBuilder(org.jiira.protobuf.ProtobufType.CHangUpRoom prototype) {
+      return newBuilder().mergeFrom(prototype);
+    }
+    public Builder toBuilder() { return newBuilder(this); }
+    
+    @java.lang.Override
+    protected Builder newBuilderForType(
+        com.google.protobuf.GeneratedMessage.BuilderParent parent) {
+      Builder builder = new Builder(parent);
+      return builder;
+    }
+    public static final class Builder extends
+        com.google.protobuf.GeneratedMessage.Builder<Builder>
+       implements org.jiira.protobuf.ProtobufType.CHangUpRoomOrBuilder {
+      public static final com.google.protobuf.Descriptors.Descriptor
+          getDescriptor() {
+        return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_CHangUpRoom_descriptor;
+      }
+      
+      protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
+          internalGetFieldAccessorTable() {
+        return org.jiira.protobuf.ProtobufType.internal_static_org_jiira_protobuf_CHangUpRoom_fieldAccessorTable;
+      }
+      
+      // Construct using org.jiira.protobuf.ProtobufType.CHangUpRoom.newBuilder()
+      private Builder() {
+        maybeForceBuilderInitialization();
+      }
+      
+      private Builder(BuilderParent parent) {
+        super(parent);
+        maybeForceBuilderInitialization();
+      }
+      private void maybeForceBuilderInitialization() {
+        if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
+        }
+      }
+      private static Builder create() {
+        return new Builder();
+      }
+      
+      public Builder clear() {
+        super.clear();
+        return this;
+      }
+      
+      public Builder clone() {
+        return create().mergeFrom(buildPartial());
+      }
+      
+      public com.google.protobuf.Descriptors.Descriptor
+          getDescriptorForType() {
+        return org.jiira.protobuf.ProtobufType.CHangUpRoom.getDescriptor();
+      }
+      
+      public org.jiira.protobuf.ProtobufType.CHangUpRoom getDefaultInstanceForType() {
+        return org.jiira.protobuf.ProtobufType.CHangUpRoom.getDefaultInstance();
+      }
+      
+      public org.jiira.protobuf.ProtobufType.CHangUpRoom build() {
+        org.jiira.protobuf.ProtobufType.CHangUpRoom result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(result);
+        }
+        return result;
+      }
+      
+      private org.jiira.protobuf.ProtobufType.CHangUpRoom buildParsed()
+          throws com.google.protobuf.InvalidProtocolBufferException {
+        org.jiira.protobuf.ProtobufType.CHangUpRoom result = buildPartial();
+        if (!result.isInitialized()) {
+          throw newUninitializedMessageException(
+            result).asInvalidProtocolBufferException();
+        }
+        return result;
+      }
+      
+      public org.jiira.protobuf.ProtobufType.CHangUpRoom buildPartial() {
+        org.jiira.protobuf.ProtobufType.CHangUpRoom result = new org.jiira.protobuf.ProtobufType.CHangUpRoom(this);
+        onBuilt();
+        return result;
+      }
+      
+      public Builder mergeFrom(com.google.protobuf.Message other) {
+        if (other instanceof org.jiira.protobuf.ProtobufType.CHangUpRoom) {
+          return mergeFrom((org.jiira.protobuf.ProtobufType.CHangUpRoom)other);
+        } else {
+          super.mergeFrom(other);
+          return this;
+        }
+      }
+      
+      public Builder mergeFrom(org.jiira.protobuf.ProtobufType.CHangUpRoom other) {
+        if (other == org.jiira.protobuf.ProtobufType.CHangUpRoom.getDefaultInstance()) return this;
+        this.mergeUnknownFields(other.getUnknownFields());
+        return this;
+      }
+      
+      public final boolean isInitialized() {
+        return true;
+      }
+      
+      public Builder mergeFrom(
+          com.google.protobuf.CodedInputStream input,
+          com.google.protobuf.ExtensionRegistryLite extensionRegistry)
+          throws java.io.IOException {
+        com.google.protobuf.UnknownFieldSet.Builder unknownFields =
+          com.google.protobuf.UnknownFieldSet.newBuilder(
+            this.getUnknownFields());
+        while (true) {
+          int tag = input.readTag();
+          switch (tag) {
+            case 0:
+              this.setUnknownFields(unknownFields.build());
+              onChanged();
+              return this;
+            default: {
+              if (!parseUnknownField(input, unknownFields,
+                                     extensionRegistry, tag)) {
+                this.setUnknownFields(unknownFields.build());
+                onChanged();
+                return this;
+              }
+              break;
+            }
+          }
+        }
+      }
+      
+      
+      // @@protoc_insertion_point(builder_scope:org.jiira.protobuf.CHangUpRoom)
+    }
+    
+    static {
+      defaultInstance = new CHangUpRoom(true);
+      defaultInstance.initFields();
+    }
+    
+    // @@protoc_insertion_point(class_scope:org.jiira.protobuf.CHangUpRoom)
+  }
+  
   public interface SErrorOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
     
@@ -3493,6 +5344,31 @@ public final class ProtobufType {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_org_jiira_protobuf_SUserData_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_jiira_protobuf_CEnterRoom_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_jiira_protobuf_CEnterRoom_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_jiira_protobuf_COutRoom_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_jiira_protobuf_COutRoom_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_jiira_protobuf_SOutRoom_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_jiira_protobuf_SOutRoom_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_jiira_protobuf_SFishChapter_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_jiira_protobuf_SFishChapter_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
+    internal_static_org_jiira_protobuf_CHangUpRoom_descriptor;
+  private static
+    com.google.protobuf.GeneratedMessage.FieldAccessorTable
+      internal_static_org_jiira_protobuf_CHangUpRoom_fieldAccessorTable;
+  private static com.google.protobuf.Descriptors.Descriptor
     internal_static_org_jiira_protobuf_SError_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
@@ -3530,12 +5406,17 @@ public final class ProtobufType {
       "CLogin\022\020\n\010userName\030\001 \002(\t\022\020\n\010passWord\030\002 \002" +
       "(\t\"i\n\tSUserData\022\n\n\002id\030\001 \002(\005\022\020\n\010userName\030" +
       "\002 \002(\t\022\020\n\010nickName\030\003 \002(\t\022\014\n\004coin\030\004 \002(\005\022\017\n" +
-      "\007diamond\030\005 \002(\005\022\r\n\005state\030\006 \002(\005\"\026\n\006SError\022" +
-      "\014\n\004code\030\001 \002(\005\"J\n\rSSingleUpdate\022\016\n\006userID" +
-      "\030\001 \002(\005\022\014\n\004keys\030\002 \003(\005\022\013\n\003IDs\030\003 \003(\005\022\016\n\006cou" +
-      "nts\030\004 \003(\005\" \n\005CTest\022\n\n\002id\030\001 \002(\005\022\013\n\003msg\030\002 " +
-      "\002(\t\" \n\005STest\022\n\n\002id\030\001 \002(\005\022\013\n\003msg\030\002 \002(\t\"\026\n" +
-      "\006CHeart\022\014\n\004time\030\001 \002(\003B\016B\014ProtobufType"
+      "\007diamond\030\005 \002(\005\022\r\n\005state\030\006 \002(\005\"\014\n\nCEnterR" +
+      "oom\"\n\n\010COutRoom\"\n\n\010SOutRoom\"}\n\014SFishChap" +
+      "ter\022\016\n\006roomID\030\001 \002(\005\022\021\n\tstartTime\030\002 \002(\003\022\023" +
+      "\n\013currentTime\030\003 \002(\003\022\021\n\tchapterID\030\004 \002(\005\022\020" +
+      "\n\010fishList\030\005 \003(\005\022\020\n\010userList\030\006 \003(\005\"\r\n\013CH" +
+      "angUpRoom\"\026\n\006SError\022\014\n\004code\030\001 \002(\005\"J\n\rSSi",
+      "ngleUpdate\022\016\n\006userID\030\001 \002(\005\022\014\n\004keys\030\002 \003(\005" +
+      "\022\013\n\003IDs\030\003 \003(\005\022\016\n\006counts\030\004 \003(\005\" \n\005CTest\022\n" +
+      "\n\002id\030\001 \002(\005\022\013\n\003msg\030\002 \002(\t\" \n\005STest\022\n\n\002id\030\001" +
+      " \002(\005\022\013\n\003msg\030\002 \002(\t\"\026\n\006CHeart\022\014\n\004time\030\001 \002(" +
+      "\003B\016B\014ProtobufType"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -3558,8 +5439,48 @@ public final class ProtobufType {
               new java.lang.String[] { "Id", "UserName", "NickName", "Coin", "Diamond", "State", },
               org.jiira.protobuf.ProtobufType.SUserData.class,
               org.jiira.protobuf.ProtobufType.SUserData.Builder.class);
-          internal_static_org_jiira_protobuf_SError_descriptor =
+          internal_static_org_jiira_protobuf_CEnterRoom_descriptor =
             getDescriptor().getMessageTypes().get(2);
+          internal_static_org_jiira_protobuf_CEnterRoom_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_org_jiira_protobuf_CEnterRoom_descriptor,
+              new java.lang.String[] { },
+              org.jiira.protobuf.ProtobufType.CEnterRoom.class,
+              org.jiira.protobuf.ProtobufType.CEnterRoom.Builder.class);
+          internal_static_org_jiira_protobuf_COutRoom_descriptor =
+            getDescriptor().getMessageTypes().get(3);
+          internal_static_org_jiira_protobuf_COutRoom_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_org_jiira_protobuf_COutRoom_descriptor,
+              new java.lang.String[] { },
+              org.jiira.protobuf.ProtobufType.COutRoom.class,
+              org.jiira.protobuf.ProtobufType.COutRoom.Builder.class);
+          internal_static_org_jiira_protobuf_SOutRoom_descriptor =
+            getDescriptor().getMessageTypes().get(4);
+          internal_static_org_jiira_protobuf_SOutRoom_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_org_jiira_protobuf_SOutRoom_descriptor,
+              new java.lang.String[] { },
+              org.jiira.protobuf.ProtobufType.SOutRoom.class,
+              org.jiira.protobuf.ProtobufType.SOutRoom.Builder.class);
+          internal_static_org_jiira_protobuf_SFishChapter_descriptor =
+            getDescriptor().getMessageTypes().get(5);
+          internal_static_org_jiira_protobuf_SFishChapter_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_org_jiira_protobuf_SFishChapter_descriptor,
+              new java.lang.String[] { "RoomID", "StartTime", "CurrentTime", "ChapterID", "FishList", "UserList", },
+              org.jiira.protobuf.ProtobufType.SFishChapter.class,
+              org.jiira.protobuf.ProtobufType.SFishChapter.Builder.class);
+          internal_static_org_jiira_protobuf_CHangUpRoom_descriptor =
+            getDescriptor().getMessageTypes().get(6);
+          internal_static_org_jiira_protobuf_CHangUpRoom_fieldAccessorTable = new
+            com.google.protobuf.GeneratedMessage.FieldAccessorTable(
+              internal_static_org_jiira_protobuf_CHangUpRoom_descriptor,
+              new java.lang.String[] { },
+              org.jiira.protobuf.ProtobufType.CHangUpRoom.class,
+              org.jiira.protobuf.ProtobufType.CHangUpRoom.Builder.class);
+          internal_static_org_jiira_protobuf_SError_descriptor =
+            getDescriptor().getMessageTypes().get(7);
           internal_static_org_jiira_protobuf_SError_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_org_jiira_protobuf_SError_descriptor,
@@ -3567,7 +5488,7 @@ public final class ProtobufType {
               org.jiira.protobuf.ProtobufType.SError.class,
               org.jiira.protobuf.ProtobufType.SError.Builder.class);
           internal_static_org_jiira_protobuf_SSingleUpdate_descriptor =
-            getDescriptor().getMessageTypes().get(3);
+            getDescriptor().getMessageTypes().get(8);
           internal_static_org_jiira_protobuf_SSingleUpdate_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_org_jiira_protobuf_SSingleUpdate_descriptor,
@@ -3575,7 +5496,7 @@ public final class ProtobufType {
               org.jiira.protobuf.ProtobufType.SSingleUpdate.class,
               org.jiira.protobuf.ProtobufType.SSingleUpdate.Builder.class);
           internal_static_org_jiira_protobuf_CTest_descriptor =
-            getDescriptor().getMessageTypes().get(4);
+            getDescriptor().getMessageTypes().get(9);
           internal_static_org_jiira_protobuf_CTest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_org_jiira_protobuf_CTest_descriptor,
@@ -3583,7 +5504,7 @@ public final class ProtobufType {
               org.jiira.protobuf.ProtobufType.CTest.class,
               org.jiira.protobuf.ProtobufType.CTest.Builder.class);
           internal_static_org_jiira_protobuf_STest_descriptor =
-            getDescriptor().getMessageTypes().get(5);
+            getDescriptor().getMessageTypes().get(10);
           internal_static_org_jiira_protobuf_STest_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_org_jiira_protobuf_STest_descriptor,
@@ -3591,7 +5512,7 @@ public final class ProtobufType {
               org.jiira.protobuf.ProtobufType.STest.class,
               org.jiira.protobuf.ProtobufType.STest.Builder.class);
           internal_static_org_jiira_protobuf_CHeart_descriptor =
-            getDescriptor().getMessageTypes().get(6);
+            getDescriptor().getMessageTypes().get(11);
           internal_static_org_jiira_protobuf_CHeart_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_org_jiira_protobuf_CHeart_descriptor,

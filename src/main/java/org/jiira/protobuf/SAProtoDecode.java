@@ -9,7 +9,7 @@ public class SAProtoDecode {
 	public static final String SABoolean = "boolean";
 	public static final String SAArray = "array";
 	public static final String isBooleanStr = "1";
-	public static final String splitStr = "\\[\\*]";
+	public static final String splitStr = "\\*";
 	public static final String decodeAssign = "[:]";
 	public static final String decodeSplit = "[,]";
 	public static final String decodeEnd = "[}]";
@@ -100,57 +100,105 @@ public class SAProtoDecode {
 			y = 0;
 		}
 	}
-	public static final String STCardType = "sTCard";
-	public static class STCard {
+	public static final String STFishType = "sTFish";
+	public static class STFish {
 		private int Id;
 		public int getId(){return Id;}
+		private int Life;
+		public int getLife(){return Life;}
 		private String Name;
 		public String getName(){return Name;}
-		private int Rare;
-		public int getRare(){return Rare;}
-		private int Up;
-		public int getUp(){return Up;}
-		private int Left;
-		public int getLeft(){return Left;}
-		private static ArrayList<STCard> list;
-		private static Map<Integer, STCard> map;
-		public STCard() {}
-		public static ArrayList<STCard> getList(){
+		private float Speed;
+		public float getSpeed(){return Speed;}
+		private int Diamond;
+		public int getDiamond(){return Diamond;}
+		private int Coin;
+		public int getCoin(){return Coin;}
+		private int Prop;
+		public int getProp(){return Prop;}
+		private static ArrayList<STFish> list;
+		private static Map<Integer, STFish> map;
+		public STFish() {}
+		public static ArrayList<STFish> getList(){
 			if(null == list){
-				list = new ArrayList<STCard>();
+				list = new ArrayList<STFish>();
 			}
 			return list;
 		}
-		public static Map<Integer, STCard> getMap(){
+		public static Map<Integer, STFish> getMap(){
 			if(null == map){
-				map = new ConcurrentHashMap<Integer, STCard>();
+				map = new ConcurrentHashMap<Integer, STFish>();
 			}
 			return map;
 		}
 		public static void parsing(String iostring) {
-			ArrayList<STCard> list = getList();
-			Map<Integer, STCard> map = getMap();
+			ArrayList<STFish> list = getList();
+			Map<Integer, STFish> map = getMap();
 			list.clear();
 			map.clear();
 			ConvertModel buf = ConvertModel.getInstance();
 			buf.setting(iostring);
-			STCard sTCard;
+			STFish sTFish;
 			while(!buf.limit()) {
-				sTCard= new STCard();
-				sTCard.Id = buf.readInt();
-				sTCard.Name = buf.readString();
-				sTCard.Rare = buf.readInt();
-				sTCard.Up = buf.readInt();
-				sTCard.Left = buf.readInt();
-				list.add(sTCard);
-				map.put(sTCard.Id, sTCard);
+				sTFish= new STFish();
+				sTFish.Id = buf.readInt();
+				sTFish.Life = buf.readInt();
+				sTFish.Name = buf.readString();
+				sTFish.Speed = buf.readFloat();
+				sTFish.Diamond = buf.readInt();
+				sTFish.Coin = buf.readInt();
+				sTFish.Prop = buf.readInt();
+				list.add(sTFish);
+				map.put(sTFish.Id, sTFish);
+			}
+		}
+	}
+	public static final String STChapterType = "sTChapter";
+	public static class STChapter {
+		private int Id;
+		public int getId(){return Id;}
+		private String[] SOF;
+		public String[] getSOF(){return SOF;}
+		private static ArrayList<STChapter> list;
+		private static Map<Integer, STChapter> map;
+		public STChapter() {}
+		public static ArrayList<STChapter> getList(){
+			if(null == list){
+				list = new ArrayList<STChapter>();
+			}
+			return list;
+		}
+		public static Map<Integer, STChapter> getMap(){
+			if(null == map){
+				map = new ConcurrentHashMap<Integer, STChapter>();
+			}
+			return map;
+		}
+		public static void parsing(String iostring) {
+			ArrayList<STChapter> list = getList();
+			Map<Integer, STChapter> map = getMap();
+			list.clear();
+			map.clear();
+			ConvertModel buf = ConvertModel.getInstance();
+			buf.setting(iostring);
+			STChapter sTChapter;
+			while(!buf.limit()) {
+				sTChapter= new STChapter();
+				sTChapter.Id = buf.readInt();
+				sTChapter.SOF = buf.readArray();
+				list.add(sTChapter);
+				map.put(sTChapter.Id, sTChapter);
 			}
 		}
 	}
 	public static void setIOString(String type, String iostring) {
 		switch(type) {
-			case SAProtoDecode.STCardType: {
-				STCard.parsing(iostring);
+			case SAProtoDecode.STFishType: {
+				STFish.parsing(iostring);
+				break;
+			}//先看结果
+			case SAProtoDecode.STChapterType: {
+				STChapter.parsing(iostring);
 				break;
 			}//先看结果
 		}

@@ -15,7 +15,8 @@ public class User {
 	private AccountTypeEnum state;//状态
 
 	private SUserData.Builder userData;
-	
+	//各种类型
+	private String roomName;
 	public User(){
 		userData = SUserData.newBuilder();
 	}
@@ -84,5 +85,13 @@ public class User {
 		userData.setDiamond(diamond);
 		userData.setState(state.ordinal());
 		return userData;
+	}
+
+	public String getRoomName() {
+		return roomName;
+	}
+
+	public void setRoomName(String roomName) {
+		this.roomName = roomName;
 	}
 }

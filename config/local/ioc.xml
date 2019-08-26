@@ -11,4 +11,8 @@
 		<worker name="org.jiira.logic.login.UserDataLogicWorker" type="logic"/>
 		<worker name="org.jiira.data.netty.tcp.SocketDataWorker" type="data" command=".sock"/>
 	</factory>
+	<factory name="org.jiira.factory.FishFactory">
+		<worker name="org.jiira.logic.fish.FishLogicWorker" type="logic"/>
+		<worker name="org.jiira.data.netty.tcp.SocketDataWorker" type="data" command=".sock"/>
+	</factory>
 </ioc>
